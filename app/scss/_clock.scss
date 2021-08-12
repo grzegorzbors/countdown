@@ -1,0 +1,62 @@
+.clock__container {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: $grayishBlue;
+    padding: 1rem;
+  }
+
+  .clock__card:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.time__container {
+  color: $softRed;
+  font-size: 4rem;
+  font-weight: 700;
+  background-color: $darkDesaturatedBlue;
+  box-shadow: 0 0.625rem black;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .overlay {
+    width: 100%;
+    height: 50%;
+    background-color: $veryDarkBlue;
+    opacity: 0.3;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+  }
+
+  // calendar-like indentations
+  &:before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    background-color: $veryDarkBlue;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -5%;
+    background-color: $veryDarkBlue;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+  }
+}
