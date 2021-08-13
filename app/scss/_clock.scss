@@ -26,17 +26,18 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  transition: transform 200ms ease-in-out;
 
   .overlay {
     width: 100%;
     height: 50%;
-    background-color: $veryDarkBlue;
     opacity: 0.3;
     z-index: 100;
+    left: 0;
+    background-color: $veryDarkBlue;
     position: absolute;
     top: 0;
-    left: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $veryDarkBlue;
   }
 
   // calendar-like indentations

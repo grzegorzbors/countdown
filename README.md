@@ -4,7 +4,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 #### Still to do:
 
-- Flip animation
+- Responsiveness
 
 ### Screenshot
 

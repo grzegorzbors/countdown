@@ -1,0 +1,3 @@
+opacity 0 dla overlay-top top
+dodać overlay-top na dole
+poprawić border bottom

@@ -20,6 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="/app/scss/main.css" />
+    <script src="/app/js/script.js" defer></script>
     <title>Frontend Mentor | Launch countdown timer</title>
   </head>
   <body>
@@ -30,26 +31,32 @@
       <div class="clock__container">
         <div class="clock__card">
           <div class="time__container">
-            <span class="overlay"></span>
-            <span id="clock__days">8</span>
+            <span class="overlay overlay-top"></span>
+            <span id="days">08</span>
+            <span class="overlay overlay-bottom"></span>
           </div>
           <p>Days</p>
         </div>
         <div class="clock__card">
           <div class="time__container">
-            <span class="overlay"></span><span id="clock__hours">23</span>
+            <span class="overlay overlay-top"></span><span id="hours">23</span>
+            <!-- <span class="overlay overlay-bottom"></span> -->
           </div>
           <p>Hours</p>
         </div>
         <div class="clock__card">
           <div class="time__container">
-            <span class="overlay"></span><span id="clock__minutes">59</span>
+            <span class="overlay overlay-top"></span
+            ><span id="minutes">59</span>
+            <!-- <span class="overlay overlay-bottom"></span> -->
           </div>
           <p>Minutes</p>
         </div>
         <div class="clock__card">
           <div class="time__container">
-            <span class="overlay"></span><span id="clock__seconds">59</span>
+            <span class="overlay overlay-top"></span
+            ><span id="seconds">59</span>
+            <!-- <span class="overlay overlay-bottom"></span> -->
           </div>
           <p>Seconds</p>
         </div>
@@ -62,6 +69,5 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
-    <script src="/app/js/script.js"></script>
   </body>
 </html>
