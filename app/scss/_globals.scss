@@ -23,7 +23,7 @@ a {
 
 body {
   margin: 0;
-  padding: 10rem 0 0 0;
+  padding-top: 6rem;
   text-align: center;
   font-size: $font-sm;
   font-weight: 700;
@@ -33,6 +33,7 @@ body {
   background-color: $veryDarkBlue;
   background-image: url(/img/bg-stars.svg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content__wrapper {

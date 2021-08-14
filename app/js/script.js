@@ -16,7 +16,9 @@ const storedTimeValues = {
 
 const countdown = setInterval(() => {
   const now = new Date().getTime();
+
   let timeToGo = deadlineTime - now;
+  timeToGo <= 1000 && clearInterval(countdown); // stop once the countdown is done
 
   let days = Math.floor(timeToGo / (1000 * 60 * 60 * 24));
   let hours = Math.floor((timeToGo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

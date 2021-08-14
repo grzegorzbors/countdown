@@ -4,7 +4,16 @@
 
   p {
     color: $grayishBlue;
-    padding: 1rem;
+    padding-top: 1.2rem;
+    letter-spacing: 0.2rem;
+
+    @include respond-to("small") {
+      font-size: 0.8rem;
+    }
+
+    @include respond-to("vsmall") {
+      font-size: 0.5rem;
+    }
   }
 
   .clock__card:not(:last-child) {
@@ -15,10 +24,11 @@
 .time__container {
   color: $softRed;
   font-size: 4rem;
+  letter-spacing: 0;
   font-weight: 700;
   background-color: $darkDesaturatedBlue;
   box-shadow: 0 0.625rem black;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 150px;
   height: 150px;
   display: flex;
@@ -59,5 +69,17 @@
     width: 10%;
     height: 10%;
     border-radius: 50%;
+  }
+
+  @include respond-to("small") {
+    font-size: 3rem;
+    width: 120px;
+    height: 120px;
+  }
+
+  @include respond-to("vsmall") {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
   }
 }
