@@ -1,14 +1,8 @@
 # Frontend Mentor - Launch countdown timer solution
 
-This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-).
-
-#### Still to do:
-
-- Responsiveness
+This is my own take on the following challenge: [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-).
 
 ### Screenshot
-
-Will be added after the project is completed.
 
 ![](./screenshot.jpg)
 
