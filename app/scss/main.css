@@ -1,8 +1,7 @@
 html,
 body {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -14,8 +13,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
@@ -40,20 +38,9 @@ body {
 
 .content__wrapper {
   height: 45vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.flip {
-  -webkit-transform: rotateX(350deg);
-          transform: rotateX(350deg);
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 h1 {
@@ -62,32 +49,24 @@ h1 {
 }
 
 .clock__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .clock__container p {
   color: #8486a9;
   padding-top: 1.2rem;
   letter-spacing: 0.2rem;
 }
-
 @media (max-width: 767px) {
   .clock__container p {
     font-size: 0.8rem;
   }
 }
-
 @media (max-width: 576px) {
   .clock__container p {
     font-size: 0.5rem;
   }
 }
-
 .clock__container .clock__card:not(:last-child) {
   margin-right: 1rem;
 }
@@ -98,28 +77,17 @@ h1 {
   letter-spacing: 0;
   font-weight: 700;
   background-color: #343650;
-  -webkit-box-shadow: 0 0.625rem black;
-          box-shadow: 0 0.625rem black;
+  box-shadow: 0 0.625rem black;
   border-radius: 5px;
   width: 150px;
   height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
-
 .time__container .overlay {
   width: 100%;
   height: 50%;
@@ -131,7 +99,6 @@ h1 {
   top: 0;
   border-bottom: 1px solid #1e1f29;
 }
-
 .time__container:before {
   content: "";
   position: absolute;
@@ -141,7 +108,6 @@ h1 {
   height: 10%;
   border-radius: 50%;
 }
-
 .time__container:after {
   content: "";
   position: absolute;
@@ -151,7 +117,6 @@ h1 {
   height: 10%;
   border-radius: 50%;
 }
-
 @media (max-width: 767px) {
   .time__container {
     font-size: 3rem;
@@ -159,7 +124,6 @@ h1 {
     height: 120px;
   }
 }
-
 @media (max-width: 576px) {
   .time__container {
     font-size: 2rem;
@@ -177,34 +141,22 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 footer i {
   cursor: pointer;
-  -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
-
 footer i:hover {
   color: #fb6087;
 }
-
 footer a:not(:last-child) {
   margin-right: 1rem;
 }
-
 @media (max-width: 767px) {
   footer {
     font-size: 2.5rem;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
