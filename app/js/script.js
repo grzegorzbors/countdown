@@ -4,14 +4,14 @@ const minutesDiv = document.querySelector("#minutes");
 const secondsDiv = document.querySelector("#seconds");
 const clocks = document.querySelectorAll(".time__container");
 
-const deadlineHelper = new Date();
-const deadlineTime = deadlineHelper.setDate(deadlineHelper.getDate() + 9); // counting down from 9 days as in mockup
+const deadlineTime = new Date();
+deadlineTime.setDate(deadlineTime.getDate() + 4);
 
 const storedTimeValues = {
-  days: 8,
+  days: 4,
   hours: 23,
   minutes: 59,
-  seconds: 60,
+  seconds: 59,
 };
 
 const countdown = setInterval(() => {
@@ -19,17 +19,17 @@ const countdown = setInterval(() => {
 
   let timeToGo = deadlineTime - now;
   timeToGo <= 1000 && clearInterval(countdown); // stop once the countdown is done
-
   let days = Math.floor(timeToGo / (1000 * 60 * 60 * 24));
   let hours = Math.floor((timeToGo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((timeToGo % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((timeToGo % (1000 * 60)) / 1000);
 
   // padStart to keep the leading zeros
+  secondsDiv.innerText = seconds.toString().padStart(2, "0");
   daysDiv.innerText = days.toString().padStart(2, "0");
   hoursDiv.innerText = hours.toString().padStart(2, "0");
+
   minutesDiv.innerText = minutes.toString().padStart(2, "0");
-  secondsDiv.innerText = seconds.toString().padStart(2, "0");
 
   // flip animation
   clocks.forEach((clockCard) => {
